@@ -7,27 +7,16 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="40dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_search" />
-
-    <EditText
-        android:id="@+id/edt_search"
+    <SearchView
+        android:id="@+id/searchView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="3dp"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:hint="Search News"
-        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Here"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toStartOf="@+id/img_favourite"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
